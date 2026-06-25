@@ -27,31 +27,18 @@ export function ProtectionPage({ lang }: { lang: Lang }) {
               {t.header.nav.reco}
             </a>
           </nav>
-          <div className="flex shrink-0 items-center gap-2">
-            <a
-              href={t.header.langOther.href}
-              aria-label={t.header.langOther.aria}
-              className={cn(
-                'inline-flex h-8 items-center rounded-md border border-gray-alpha-400 bg-background-100 px-2.5',
-                'text-label-12-mono text-gray-1000',
-                'transition-colors hover:bg-background-200',
-                'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700',
-              )}
-            >
-              {t.header.langOther.label}
-            </a>
-            <a
-              href="#recomendacion"
-              className={cn(
-                'hidden h-8 items-center rounded-md bg-gray-1000 px-3 sm:inline-flex',
-                'text-button-12 font-medium text-background-100',
-                'transition-colors hover:bg-gray-900',
-                'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700',
-              )}
-            >
-              {t.header.cta}
-            </a>
-          </div>
+          <a
+            href={t.header.langOther.href}
+            aria-label={t.header.langOther.aria}
+            className={cn(
+              'inline-flex h-8 shrink-0 items-center rounded-md border border-gray-alpha-400 bg-background-100 px-2.5',
+              'text-label-12-mono text-gray-1000',
+              'transition-colors hover:bg-background-200',
+              'focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-700',
+            )}
+          >
+            {t.header.langOther.label}
+          </a>
         </div>
       </header>
 
