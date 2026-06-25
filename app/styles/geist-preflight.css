@@ -1,0 +1,51 @@
+/*
+ Use this file to set custom preflight styles.
+*/
+
+html,
+:host {
+  /* Context: https://x.com/adamwathan/status/1884366958923292869 */
+  font-synthesis: none;
+}
+
+/* Sev: selection tokens */
+::selection {
+  background-color: var(--geist-selection);
+  color: var(--geist-selection-text-color);
+}
+
+::-moz-selection {
+  background-color: var(--geist-selection);
+  color: var(--geist-selection-text-color);
+}
+
+svg {
+  shape-rendering: crispEdges;
+}
+
+svg path,
+svg circle,
+svg polygon,
+svg rect,
+svg line {
+  shape-rendering: geometricprecision;
+}
+
+/* TODOS */
+/**
+   * Reset the stacking order on the root of the app
+   * so that any portals that append to document.body
+   * will have a higher stacking order by default
+   *
+   * See:
+   * https://github.com/radix-ui/primitives/issues/368#issuecomment-754063915
+   */
+/* #__next {
+  position: relative;
+  z-index: 0;
+} */
+
+/* Our icons have a min-width of 16px, this avoids them shrinking when used in a flex container */
+/* [data-testid='geist-icon'] {
+  min-width: 16px;
+} */

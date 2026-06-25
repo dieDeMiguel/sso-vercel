@@ -1,0 +1,279 @@
+/* type="success" */
+.geist-themed.geist-success {
+  --themed-fg: var(--geist-success);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-success-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-success);
+  --themed-border: var(--geist-success);
+}
+html:not(.dark-theme) .geist-themed.geist-success-fill.geist-success-contrast {
+  --themed-fg: var(--geist-success-dark);
+  --themed-bg: var(--geist-success-lighter);
+  --themed-border: var(--geist-success);
+}
+
+/* type="error"  */
+.geist-themed.geist-error {
+  --themed-fg: var(--geist-error);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-error-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-error);
+  --themed-border: var(--geist-error);
+}
+html:not(.dark-theme) .geist-themed.geist-error-fill.geist-error-contrast {
+  --themed-fg: var(--geist-error-dark);
+  --themed-bg: var(--geist-error-lighter);
+  --themed-border: var(--geist-error);
+}
+
+/* type="warning"  */
+.geist-themed.geist-warning {
+  --themed-fg: var(--geist-warning);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-warning-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-warning);
+  --themed-border: var(--geist-warning);
+}
+.geist-themed.geist-warning-fill.geist-warning-contrast {
+  --themed-fg: var(--geist-warning-dark);
+  --themed-bg: var(--geist-warning-lighter);
+  --themed-border: var(--geist-warning);
+}
+.geist-themed.geist-warning-fill.geist-warning-dark {
+  /* amber.700 */
+  --themed-bg: #bd5200;
+  --themed-border: #bd5200;
+}
+.dark-theme .geist-themed.geist-warning-fill.geist-warning-dark {
+  --themed-fg: #000;
+  /* amber.500 */
+  --themed-bg: #f59e0b;
+  --themed-border: #f59e0b;
+}
+
+/* type="secondary"  */
+.geist-themed.geist-secondary {
+  --themed-fg: var(--geist-secondary);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-secondary-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-secondary);
+  --themed-border: var(--geist-secondary);
+}
+.geist-themed.geist-secondary-fill.geist-secondary-contrast {
+  --themed-fg: var(--geist-secondary-dark);
+  --themed-bg: var(--geist-secondary-lighter);
+  --themed-border: var(--geist-secondary);
+}
+
+/* type="alert"  */
+.geist-themed.geist-alert {
+  --themed-fg: var(--geist-highlight-pink);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-alert-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-highlight-pink);
+  --themed-border: var(--geist-highlight-pink);
+}
+
+/* type="violet"  */
+.geist-themed.geist-violet {
+  --themed-fg: var(--geist-violet);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+.geist-themed.geist-violet-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-violet);
+  --themed-border: var(--geist-violet);
+}
+.geist-themed.geist-violet-fill.geist-violet-contrast {
+  --themed-fg: var(--geist-violet-dark);
+  --themed-bg: var(--geist-violet-lighter);
+  --themed-border: var(--geist-violet);
+}
+
+/* type="lite" (no fill variant) */
+.geist-themed.geist-lite {
+  --themed-fg: var(--geist-foreground);
+  --themed-bg: var(--accents-1);
+  --themed-border: var(--accents-2);
+}
+
+/* type="ghost" (no fill variant) */
+.geist-themed.geist-ghost {
+  --themed-fg: var(--accents-5);
+  --themed-bg: transparent;
+  --themed-border: transparent;
+}
+
+/* type="cyan"  */
+.geist-themed.geist-cyan {
+  --themed-fg: var(--geist-cyan);
+  --themed-bg: var(--geist-background);
+  --themed-border: var(--themed-fg);
+}
+
+.geist-themed.geist-cyan-fill {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-cyan);
+  --themed-border: var(--geist-cyan);
+}
+
+.geist-themed.geist-cyan-fill.geist-cyan-dark {
+  --themed-fg: #fff;
+  --themed-bg: var(--geist-cyan-dark);
+  --themed-border: var(--geist-cyan-dark);
+}
+
+.geist-themed.geist-cyan-fill.geist-cyan-contrast {
+  --themed-fg: var(--geist-cyan-dark);
+  --themed-bg: var(--geist-cyan-lighter);
+  --themed-border: var(--geist-cyan);
+}
+
+.v3-colors {
+  --note-border-color: var(--ds-gray-400);
+  --note-fg: var(--ds-gray-900);
+  --note-bg: transparent;
+  --note-link: var(--ds-blue-700);
+
+  border: 1px solid var(--note-border-color) !important;
+  background: var(--note-bg) !important;
+  color: var(--note-fg) !important;
+
+  /* Match the text selection color to the note type. */
+  * {
+    &::selection {
+      background: var(--note-selection, var(--note-fg)) !important;
+    }
+  }
+
+  &.geist-secondary {
+    --note-border-color: var(--ds-gray-400);
+    --note-fg: var(--ds-gray-900);
+    --note-bg: transparent;
+    --note-link: var(--ds-gray-1000);
+
+    &.geist-secondary-fill {
+      --note-bg: var(--ds-gray-200);
+      --note-border-color: var(--ds-gray-100);
+    }
+  }
+
+  &.geist-success {
+    --note-border-color: var(--ds-blue-400);
+    --note-fg: var(--ds-blue-900);
+    --note-bg: transparent;
+    --note-selection: var(--ds-blue-700);
+    --note-link: var(--ds-blue-1000);
+
+    &.geist-success-fill {
+      --note-bg: var(--ds-blue-200);
+      --note-border-color: var(--ds-blue-100);
+    }
+  }
+
+  &.geist-error {
+    --note-border-color: var(--ds-red-400);
+    --note-fg: var(--ds-red-900);
+    --note-bg: transparent;
+    --note-selection: var(--ds-red-800);
+    --note-link: var(--ds-red-1000);
+
+    &.geist-error-fill {
+      --note-bg: var(--ds-red-200);
+      --note-border-color: var(--ds-red-100);
+    }
+  }
+
+  &.geist-warning {
+    --note-border-color: var(--ds-amber-400);
+    --note-fg: var(--ds-amber-900);
+    --note-bg: transparent;
+    --note-link: var(--ds-amber-1000);
+
+    &.geist-warning-fill {
+      --note-bg: var(--ds-amber-200);
+      --note-border-color: var(--ds-amber-100);
+    }
+  }
+
+  &.geist-secondary {
+    --note-border-color: var(--ds-gray-alpha-400);
+    --note-fg: var(--ds-gray-alpha-900);
+    --note-bg: transparent;
+    --note-link: var(--ds-gray-1000);
+
+    &.geist-secondary-fill {
+      --note-bg: var(--ds-gray-alpha-200);
+      --note-border-color: transparent;
+    }
+  }
+
+  &.geist-alert {
+    --note-border-color: var(--ds-red-400);
+    --note-fg: var(--ds-red-900);
+    --note-bg: transparent;
+    --note-selection: var(--ds-red-800);
+    --note-link: var(--ds-red-1000);
+
+    &.geist-alert-fill {
+      --note-bg: var(--ds-red-200);
+      --note-border-color: var(--ds-red-100);
+    }
+  }
+
+  &.geist-violet {
+    --note-border-color: var(--ds-purple-400);
+    --note-fg: var(--ds-purple-900);
+    --note-bg: transparent;
+    --note-link: var(--ds-purple-1000);
+
+    &.geist-violet-fill {
+      --note-bg: var(--ds-purple-200);
+      --note-border-color: var(--ds-purple-100);
+    }
+  }
+
+  &.geist-cyan {
+    --note-border-color: var(--ds-teal-400);
+    --note-fg: var(--ds-teal-900);
+    --note-bg: transparent;
+    --note-link: var(--ds-teal-1000);
+
+    &.geist-cyan-fill {
+      --note-bg: var(--ds-teal-200);
+      --note-border-color: var(--ds-teal-100);
+    }
+  }
+}
+
+/* Specific selection colors for these variants in dark mode to ensure high enough contrast ratios. */
+.dark-theme {
+  .v3-colors {
+    &.geist-default {
+      --note-selection: var(--ds-gray-500);
+    }
+    &.geist-warning {
+      --note-selection: var(--ds-amber-500);
+    }
+
+    &.geist-violet {
+      --note-selection: var(--ds-purple-600);
+    }
+  }
+}

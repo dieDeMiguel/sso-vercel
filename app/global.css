@@ -1,0 +1,8 @@
+@import './styles/geistcn-tailwind.css';
+@import './styles/geistcn-elements.css';
+@import './styles/geistcn-design-system.css';
+@import './styles/geistcn-with-type.css';
+
+body {
+  min-height: 100vh;
+}

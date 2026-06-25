@@ -1,0 +1,43 @@
+/* Page-level styling
+  ============================================ */
+
+body {
+  position: relative;
+  font-size: 100%;
+  min-height: 100%;
+  max-width: 100vw;
+  margin: 0;
+}
+
+html,
+html body,
+:host {
+  /*
+     * NOTE(wits): This must be "html body" so that it's specific enough to
+     * override body styling that comes in from another package in vercel-site.
+     * The var fallback here will only be used as a last resort if `--font-sans`
+     * is not set by next/font.
+     */
+  font-family: var(--font-sans, var(--font-sans-fallback));
+}
+
+/* Browsers don't inherit font-family on form elements by default */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+html,
+body,
+:host {
+  text-rendering: optimizeLegibility;
+  background-color: var(--geist-background);
+  color: var(--ds-gray-1000);
+  scroll-padding-top: var(--header-height);
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
