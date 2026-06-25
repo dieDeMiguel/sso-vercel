@@ -8,20 +8,22 @@ import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
   title: {
-    default: 'SSO Vercel',
-    template: '%s | SSO Vercel',
+    default: 'Protección de deployments en Vercel · Plan Pro',
+    template: '%s · Deployment Protection',
   },
-  description: 'Single sign-on for Vercel',
+  description:
+    'Seis alternativas para proteger deployments de Vercel en plan Pro, comparadas con precios reales y trade-offs.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
-      lang="en"
-      className={`dark dark-theme ${GeistSans.variable} ${GeistMono.variable} font-sans antialiased [color-scheme:dark]`}
+      lang="es"
+      className={`dark dark-theme ${GeistSans.variable} ${GeistMono.variable} font-sans antialiased [color-scheme:dark] scroll-smooth`}
+      style={{ overflowX: 'clip' }}
       suppressHydrationWarning
     >
-      <body className="flex min-h-screen flex-col bg-background-100 text-gray-1000">
+      <body className="flex min-h-screen flex-col bg-background-100 text-gray-1000" style={{ overflowX: 'clip' }}>
         {children}
         <Analytics />
         <SpeedInsights />
