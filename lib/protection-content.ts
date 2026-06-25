@@ -201,7 +201,7 @@ const ES: Content = {
       n: '05',
       slug: 'bypass',
       title: 'Mecanismos complementarios de bypass',
-      price: 'Incluido en Pro',
+      price: 'Disponible · según configuración',
       priceTone: 'neutral',
       pitch:
         'No protegen por sí mismos: permiten eludir la protección en casos puntuales. Se combinan con Standard o Advanced para habilitar acceso programático o controlado.',
@@ -225,8 +225,8 @@ const ES: Content = {
         'Lo que aparece únicamente al subir de plan: allowlist por IP, Passport como ciudadano de primera clase, y el paquete completo de Advanced sin add-on separado.',
       coverage: [
         'Trusted IPs — allowlist por IP o CIDR; el tráfico fuera del rango responde 404',
-        'Vercel Passport incluido',
-        'Advanced Deployment Protection incluido',
+        'Vercel Passport — disponible en Enterprise; pricing y paquetización a confirmar con el equipo de cuenta',
+        'Advanced Deployment Protection disponible en Enterprise',
       ],
       notCovered: ['Disponible únicamente en plan Enterprise'],
       notes:
@@ -273,7 +273,7 @@ const ES: Content = {
         accounts: dash,
         sso: 'Sí (OIDC)',
         prod: 'Sí',
-        passthrough: 'Sí (JWT)',
+        passthrough: 'Sí (header x-vercel-oidc-passport-token)',
         level: 'Edge',
       },
       {
@@ -321,7 +321,7 @@ const ES: Content = {
       {
         n: '02',
         label: 'Integración con IdP corporativo',
-        body: 'Consultar con el equipo de cuenta de Vercel la disponibilidad de Passport en Pro. Si no resulta aplicable, evaluar middleware personalizado como puente o migración a Enterprise, donde Passport, Trusted IPs y Advanced están incluidos.',
+        body: 'Consultar con el equipo de cuenta de Vercel la disponibilidad de Passport en Pro. Si no resulta aplicable, evaluar middleware personalizado como puente o migración a Enterprise, donde Advanced Deployment Protection y Trusted IPs están disponibles, y Passport está disponible como feature Enterprise con pricing y paquetización a confirmar.',
       },
       {
         n: '03',
@@ -458,7 +458,7 @@ const EN: Content = {
       n: '05',
       slug: 'bypass',
       title: 'Complementary bypass mechanisms',
-      price: 'Included in Pro',
+      price: 'Available · per configuration',
       priceTone: 'neutral',
       pitch:
         'They do not protect on their own — they let you bypass the protection in specific cases. Pair with Standard or Advanced to enable programmatic or controlled access.',
@@ -482,8 +482,8 @@ const EN: Content = {
         'What only shows up when you move up plans: IP allowlists, Passport as a first-class citizen, and the full Advanced package without a separate add-on.',
       coverage: [
         'Trusted IPs — IP / CIDR allowlist; traffic outside the range responds with 404',
-        'Vercel Passport bundled in',
-        'Advanced Deployment Protection bundled in',
+        'Vercel Passport — available on Enterprise; pricing and packaging to confirm with the account team',
+        'Advanced Deployment Protection available on Enterprise',
       ],
       notCovered: ['Available on the Enterprise plan only'],
       notes:
@@ -530,7 +530,7 @@ const EN: Content = {
         accounts: dash,
         sso: 'Yes (OIDC)',
         prod: 'Yes',
-        passthrough: 'Yes (JWT)',
+        passthrough: 'Yes (header x-vercel-oidc-passport-token)',
         level: 'Edge',
       },
       {
@@ -578,7 +578,7 @@ const EN: Content = {
       {
         n: '02',
         label: 'Integration with a corporate IdP',
-        body: 'Check Passport availability on Pro with your Vercel account team. If it does not apply, evaluate custom middleware as a bridge — or migration to Enterprise, where Passport, Trusted IPs, and Advanced come bundled.',
+        body: 'Check Passport availability on Pro with your Vercel account team. If it does not apply, evaluate custom middleware as a bridge — or migration to Enterprise, where Advanced Deployment Protection and Trusted IPs are available, and Passport is available as an Enterprise feature with pricing and packaging to confirm.',
       },
       {
         n: '03',
